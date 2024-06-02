@@ -6,12 +6,12 @@
             {
                 "title": "Service 1",
                 "url": "https://example.com",
-                "logo-path": "%PUBLIC_URL%/logos/1.png"
+                "logo_path": "https://github.githubassets.com/favicons/favicon-dark.svg"
             },
             {
                 "title": "GitHub",
                 "url": "https://github.com/apicomplexa",
-                "logo-path": "https://github.githubassets.com/favicons/favicon-dark.svg"
+                "logo_path": "https://github.githubassets.com/favicons/favicon-dark.svg"
             }
         ]
     },{
@@ -21,12 +21,12 @@
             {
                 "title": "Service 1",
                 "url": "https://example.com",
-                "logo-path": "%PUBLIC_URL%/logos/1.png"
+                "logo_path": "https://github.githubassets.com/favicons/favicon-dark.svg"
             },
             {
                 "title": "GitHub",
                 "url": "https://github.com/apicomplexa",
-                "logo-path": "https://github.githubassets.com/favicons/favicon-dark.svg"
+                "logo_path": "https://github.githubassets.com/favicons/favicon-dark.svg"
             }
         ]
     },{
