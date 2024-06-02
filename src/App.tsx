@@ -1,13 +1,11 @@
 import React from 'react';
 
+import "./app.css"
+import "./container.css"
+
 function App() {
   return (
-    <div className="App">
-      <div className="container cards-container">
-        <div className="columns is-multiline cards-colums">
-          
-        </div>
-      </div>
+    <div className="app">
     </div>
   );
 }
