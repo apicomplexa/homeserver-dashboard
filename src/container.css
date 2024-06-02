@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: row;
 
-    --max-width: 950px;
+    --max-width: 1200px;
 
     --lateral-padding: calc((100% - var(--max-width)) / 2 + 7px);
 
@@ -12,14 +12,14 @@
     padding-right: var(--lateral-padding);
 }
 
-@media screen and (min-width: 950px) {
+@media screen and (min-width: 1200px) {
     .container {
         width: calc(var(--max-width) - 14px);
         
     }   
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1200px) {
     .container {
         --lateral-padding: 7px;
     }
