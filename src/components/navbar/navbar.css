@@ -1,0 +1,26 @@
+.navbar {
+    height: 85px;
+    background-color: rgb(var(--gb-color-darker));
+}
+
+.brand-title {
+    font-size: 35px;
+    font-weight: 250;
+    font-style: normal;
+}
+
+.brand-subtitle {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.navbar-brand-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    height: 50px;
+}
