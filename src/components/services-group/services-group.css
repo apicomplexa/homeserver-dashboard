@@ -1,0 +1,24 @@
+.container.services-groups {
+    justify-content: center;
+    gap: 20px;
+}
+.services-group {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 350px;
+    max-width: 480px;
+}
+
+.group-header {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 7px;
+    border-bottom: 0.7px solid rgba(var(--tx-color), 0.7);
+}
+
+.group-title {
+    font-size: 25px;
+}
