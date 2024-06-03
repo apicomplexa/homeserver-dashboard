@@ -24,3 +24,13 @@
 .group-title {
     font-size: 25px;
 }
+
+.nothing-here-alert {
+    color: rgba(var(--tx-color), 0.7);
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.nothing-here-alert > .subtitle {
+    font-size: small;
+}
