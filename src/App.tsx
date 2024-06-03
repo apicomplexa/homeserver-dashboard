@@ -9,8 +9,6 @@ import { ServicesGroupes } from "./components/services-group/services-group";
 
 function App() {
     const [services, setServices] = useState<Group[]>([])
-    
-    console.log(services)
     return (
         <div className="app">
             <ServicesConfStore setConfig={setServices}/>
