@@ -1,6 +1,6 @@
 .navbar {
     height: 85px;
-    background-color: rgb(var(--gb-color-darker));
+    background-color: rgb(var(--bg-color-darker));
 }
 
 .brand-title {
