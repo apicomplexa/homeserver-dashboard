@@ -3,9 +3,7 @@
 html {
   --bg-color: 43, 43, 50;
   --bg-color-darker: 27,27,30;
-  --shadow-color: 11,11,11;
-  --primary: 231, 19, 63;
-  --secondary: 255, 131, 165;
+  --shadow-color: 15,15,25;
   --tx-color: 204, 204, 204;
 
   --icon-color: var(--tx-color);
