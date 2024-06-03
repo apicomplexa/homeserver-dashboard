@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Service } from "../store/services-conf-store"
 import "./service-card.css"
 import { Circle, CircleDot } from "lucide-react"
+import { Img } from "../img/img"
 
 export const ServiceCard = (props: {
     service: Service
@@ -11,7 +12,7 @@ export const ServiceCard = (props: {
         <div className="service-card">
             <div className="service-card-header">
                 <div className="service-card-logo-box">
-                    <img src={props.service.logo_path} alt={`${props.service.title} logo`}/>
+                    <Img src={props.service.logo_path} alt={`${props.service.title} logo`}/>
                 </div>
                 <div className="service-card-title">
                     <span>{props.service.title}</span>
