@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 
     --max-width: 1200px;
 
@@ -34,11 +35,19 @@
         justify-content: flex-start;
     }
 
+    .container > * {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .container.no-warp {
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+    .container.container.no-warp > * {
+        width: auto;   
     }
 }
