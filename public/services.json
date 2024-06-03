@@ -20,7 +20,7 @@
         "services": [
             {
                 "title": "Invalid",
-                "url": "https://invalid.github.com",
+                "url": "https://invalid.example.com",
                 "logo_path": "https://github.githubassets.com/favicons/favicon-dark.svg"
             },
             {
