@@ -4,7 +4,7 @@ import "./services-group.css"
 
 export const ServicesGroupes = (props: {conf: Group[]}) => {
 
-    const groups = props.conf.map(g => <GroupComp group={g}/>)
+    const groups = props.conf.map((g, i) => <GroupComp key={`service-group-${i}`} group={g}/>)
 
     return <div className="container services-groups">
         {groups}
