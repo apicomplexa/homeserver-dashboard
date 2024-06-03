@@ -1,5 +1,6 @@
 import Icon from "../icon/icon"
 import { Group } from "../store/services-conf-store"
+import { ServiceCard } from "./service-card"
 import "./services-group.css"
 
 export const ServicesGroupes = (props: {conf: Group[]}) => {
@@ -12,8 +13,12 @@ export const ServicesGroupes = (props: {conf: Group[]}) => {
 }
 
 const GroupComp = (props: {group: Group}) => {
+
+    const services = props.group.services.map((s, i) => <ServiceCard key={`service-card-${i}`} service={s}/>)
+
     return <div className="services-group">
         <GroupHeader group={props.group}/>
+        {services}
     </div>
 }
 
