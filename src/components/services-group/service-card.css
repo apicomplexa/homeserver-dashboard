@@ -39,7 +39,16 @@ a {
     height: 30px;
     width: 30px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
 }
+
+.service-card-logo-box img {
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 .service-running-indicator-box {
     height: 25px;
