@@ -27,11 +27,13 @@ export const RunningIndicator = (props: {url: string}) => {
     const [isRunning, setRunning] = useState<boolean>(false)
 
     useEffect(() => {
-        fetch(props.url, { mode: 'no-cors' })
+        fetch(process.env.PUBLIC_URL + "/cors/" + props.url)
             .then(r => {
-                r.ok || r.type === 'opaque'
-                    ? setRunning(true) 
-                    : setRunning(false)
+                if (r.ok || r.status === 401 || r.status === 403 ) { // 401 (Unauthorized) 403 (Forbidden)
+                    setRunning(true) 
+                } else {
+                    setRunning(false)
+                }
             })
             .catch(e => {
                 setRunning(false)

@@ -1,37 +1,58 @@
 [
     {
-        "title": "Group 1",
+        "title": "Система",
         "icon": "component",
         "services": [
             {
-                "title": "Service 1",
-                "url": "https://example.com",
-                "logo_path": "https://github.githubassets.com/favicons/favicon-dark.svg"
+                "title": "Ajenti",
+                "url": "https://ajenti.apicomplexa.com",
+                "logo_path": "https://ajenti.apicomplexa.com/resources/core/resources/images/icon.png"
             },
             {
-                "title": "GitHub",
-                "url": "https://github.com/apicomplexa",
-                "logo_path": "https://github.githubassets.com/favicons/favicon-dark.svg"
+                "title": "Portainer",
+                "url": "https://portainer.apicomplexa.com",
+                "logo_path": "https://portainer.apicomplexa.com/2dcfc527d067d4ae3424.png"
+            },
+            {
+                "title": "Nginx PM",
+                "url": "https://pm.apicomplexa.com",
+                "logo_path": "https://pm.apicomplexa.com/images/favicons/favicon-32x32.png"
+            },
+            {
+                "title": "Router",
+                "url": "https://router.apicomplexa.com/",
+                "logo_path": ""
             }
         ]
     },{
-        "title": "Group 2",
-        "icon": "grid-2x2",
+        "title": "Инструменты",
+        "icon": "wrench",
         "services": [
             {
-                "title": "Invalid",
-                "url": "https://invalid.example.com",
-                "logo_path": "https://github.githubassets.com/favicons/favicon-dark.svg"
+                "title": "NextCloud",
+                "url": "https://nextcloud.apicomplexa.com/apps/files/files",
+                "logo_path": "https://nextcloud.apicomplexa.com/core/img/logo/logo.svg"
             },
             {
-                "title": "GitHub",
-                "url": "https://github.com/apicomplexa",
-                "logo_path": "https://github.githubassets.com/favicons/favicon-dark.svg"
+                "title": "Bitwarden",
+                "url": "https://wv.apicomplexa.com/",
+                "logo_path": "https://wv.apicomplexa.com/images/favicon-32x32.png"
+            },
+            {
+                "title": "SearXNG",
+                "url": "https://searxng.apicomplexa.com",
+                "logo_path": "https://searxng.apicomplexa.com/static/themes/simple/img/favicon.png"
             }
         ]
     },{
-        "title": "Group 3",
-        "icon": "x",
-        "services": []
+        "title": "Публикации",
+        "icon": "book-copy",
+        "services": [
+            {
+                "title": "Study Notes",
+                "url": "https://notes.apicomplexa.com",
+                "logo_path": ""
+            }
+        ]
     }
 ]
