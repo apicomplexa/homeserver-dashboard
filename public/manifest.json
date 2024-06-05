@@ -1,7 +1,12 @@
 {
   "short_name": "Dashboard",
   "name": "Simple dashboard",
-  "icons": [],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any"
+    }
+  ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
