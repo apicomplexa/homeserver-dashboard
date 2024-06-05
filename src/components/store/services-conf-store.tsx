@@ -1,9 +1,10 @@
-import { createContext, useEffect, useState } from "react"
+import { useEffect } from "react"
 
 export interface Service {
     title: string,
     url: string,
-    logo_path: string
+    logo_path: string,
+    icon?: string
 }
 
 export interface Group {
@@ -38,7 +39,7 @@ const validateConfig = (conf: Partial<Group>[]): Group[] => {
         const title = s.title || url
         const logo_path = s.logo_path || ""
         return {
-            url, title, logo_path
+            url, title, logo_path, icon: s.icon
         }
     }
     const validateGroup = (group: Partial<Group>): Group => {

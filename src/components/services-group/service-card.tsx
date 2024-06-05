@@ -12,7 +12,7 @@ export const ServiceCard = (props: {
         <div className="service-card">
             <div className="service-card-header">
                 <div className="service-card-logo-box">
-                    <Img src={props.service.logo_path} alt={`${props.service.title} logo`}/>
+                    <Img src={props.service.logo_path} alt={`${props.service.title} logo`} icon={props.service.icon}/>
                 </div>
                 <div className="service-card-title">
                     <span>{props.service.title}</span>
