@@ -8,12 +8,8 @@
 
 # Set-up
 
-1. Install [docker](https://docs.docker.com/engine/install/) and [docker compose](https://docs.docker.com/engine/install/)
-2. Clone this repo
-```bash
-git clone https://github.com/apicomplexa/homeserver-dashboard.git
-```
-3. Edit `services.json` with your server settings
+1. Install [docker](https://docs.docker.com/engine/install/)
+2. Somewhere on your server create `services.json` with your server settings
 
 - Group
     - `title` text in header of services group
@@ -52,12 +48,16 @@ Structure of `services.json`
 ]
 ```
 
-4. Build using docker compose 
+3. Start docker container 
 ```bash
-docker compose up -d --build
+export $PORT = 80
+export $PATH_TO_SERVICES_JSON = "/path/to/services.json"
+
+docker run -d -v $PATH_TO_SERVICES_JSON:/app/services.json -p $PORT:80 apicomplexa/dashboard
 ```
-5. Dashboard available in `http://localhost:80`
-6. Now you can use reverce proxy to get SSl certivicate and use HTTPS
+5. Dashboard available in `http://localhost:$PORT` (80 by default)
+6. Changing in `services.json` don't require restarting of container, just page reload
+7. You can use reverse proxy to get SSl certivicate and use HTTPS
 
 
 # Credits 
