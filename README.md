@@ -50,13 +50,13 @@ Structure of `services.json`
 
 3. Start docker container 
 ```bash
-export $PORT = 80
-export $PATH_TO_SERVICES_JSON = "/path/to/services.json"
-
-docker run -d -v $PATH_TO_SERVICES_JSON:/app/services.json -p $PORT:80 apicomplexa/dashboard
+export PORT = 80
+export PATH_TO_SERVICES_JSON = "abs/path/to/services.json"
+docker pull apicomplexa/dashboard
+docker run -d -v $PATH_TO_SERVICES_JSON:/app/services.json -p $PORT:80 --name="dashboard" apicomplexa/dashboard
 ```
 5. Dashboard available in `http://localhost:$PORT` (80 by default)
-6. Changing in `services.json` don't require restarting of container, just page reload
+6. Changing in `services.json` don't require restarting of container, just page reload (and cleaning cache sometimes)
 7. You can use reverse proxy to get SSl certivicate and use HTTPS
 
 
